@@ -26,6 +26,7 @@ public struct ListItemOptions {
     public var spacingAfterPrefix: CGFloat
     public var spacingAbove: CGFloat
     public var spacingBelow: CGFloat
+    public var lineHeightMultiple: CGFloat
     public var alignment: NSTextAlignment
 
     // MARK: - Life cycle
@@ -34,12 +35,14 @@ public struct ListItemOptions {
                 spacingAfterPrefix: CGFloat = 8,
                 spacingAbove: CGFloat = 4,
                 spacingBelow: CGFloat = 8,
+                lineHeightMultiple: CGFloat = 1.2,
                 alignment: NSTextAlignment = .natural) {
 
         self.maxPrefixDigits = maxPrefixDigits
         self.spacingAfterPrefix = spacingAfterPrefix
         self.spacingAbove = spacingAbove
         self.spacingBelow = spacingBelow
+        self.lineHeightMultiple = lineHeightMultiple
         self.alignment = alignment
     }
 
